@@ -1,58 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-      crossorigin="anonymous"
-    />
 
-    <link rel="stylesheet" href="geral.css">
-    <title>SJ Car</title>
-  </head>
-  <body>
- 
-    <header>
-        <div class="pos-f-t">
-            <div class="collapse" id="navbarToggleExternalContent">
-              <div class="bg-dark p-4">
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item text-white bg-dark"> <a class="badge-dark" href="#">Home</a></li>
-                    <li class="list-group-item text-white bg-dark"> <a class="badge-dark" href="#">Catálogo</a></li>
-                    <li class="list-group-item text-white bg-dark"> <a class="badge-dark" href="#">Carros de colecionador</a></li>
-                    <li class="list-group-item text-white bg-dark"> <a class="badge-dark" href="#">Sobre</a></li>
-                    <li class="list-group-item text-white bg-dark"> <a class="badge-dark" href="#">Contatos</a></li>
-                  </ul>
-              </div>
-            </div>
-            <nav class="navbar navbar-dark bg-dark">
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Alterna navegação">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <!--Logo-->
-              
-            </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
 
-          </div>
-    </header>
+  <link rel="stylesheet" href="geral.css">
+  <link rel="stylesheet" href="style.css">
+  <title>SJ Car</title>
+</head>
 
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+<body>
+
+  <header>
+    <div class="pos-f-t">
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item text-white bg-dark"> <a class="badge-dark" href="#">Home</a></li>
+            <li class="list-group-item text-white bg-dark"> <a class="badge-dark" href="#">Catálogo</a></li>
+            <li class="list-group-item text-white bg-dark"> <a class="badge-dark" href="#">Carros de colecionador</a>
+            </li>
+            <li class="list-group-item text-white bg-dark"> <a class="badge-dark" href="#">Sobre</a></li>
+            <li class="list-group-item text-white bg-dark"> <a class="badge-dark" href="#">Contatos</a></li>
+          </ul>
+        </div>
+      </div>
+      <nav class="navbar navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
+          aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Alterna navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--Logo-->
+
+      </nav>
+
+    </div>
+  </header>
+
+  <!--Sliders-->
+  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="img/2.png" alt="Primeiro Slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="img/3.png" alt="Segundo Slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="img/4.png" alt="Terceiro Slide">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Próximo</span>
+    </a>
+  </div>
+
+  <h5>Carros mais vendidos</h5>
+
+  <!--Card Carros mais vendidos-->
+<div class="CardMaisVendidos">
+  <div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="img/Huracan Steratto.svg" alt="Imagem Lamborghini Huracan Sterrato">
+    <div class="card-body m-0 p-0">
+      <h5 class="card-title font-weight-bold ">Lamborghini Huracan Sterrato</h5>
+      <p class="card-text">Mais de <strong><span class="font-italic text-danger ">1000</span></strong> vendas efetuadas</p>
+      <a href="#"><button class="btn w-100 border border-primary border-right-0 border-bottom-0 border-left-0 rounded-0 BntOuro">Dirigir</button> </a>
+    </div>
+  </div>
+</div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

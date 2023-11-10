@@ -1,0 +1,7 @@
+.BntOuro{
+    background-color: #FDD14A;
+}
+.CardMaisVendidos{
+    display: flex;
+    justify-content: center;
+}
