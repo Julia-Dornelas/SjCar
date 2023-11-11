@@ -1,7 +1,24 @@
 .BntOuro{
     background-color: #FDD14A;
 }
+.BntPrata{
+    background-color: #D5D5D5;
+}
+.BntBronze{
+    background-color:#EB7A3A;
+}
 .CardMaisVendidos{
-    display: flex;
-    justify-content: center;
+    display:flexbox;
+    justify-content: center; 
+}
+.CardNoticias{
+    display:flexbox;
+    justify-content: center; 
+}
+.Dirigir{
+    color: white;
+    font-size: larger;
+}       
+.BntConfiraAgora{
+    background-color:#45372D;   
 }
