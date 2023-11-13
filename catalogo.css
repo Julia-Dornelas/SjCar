@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root{
+    --vermelho: #BE0C27;
+    --cinza: #555561;
+    --branco: #fff;
+}
+
+/*tags*/
+
+/*id*/
+
+/*Classes*/
+.tituloFiltro{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+.divisorTitulo{
+    size: 1px;
+    opacity: 100%;
+    color: var(--vermelho);
+    width: 152px;
+}
+
+.Ubuntu{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.Montserrat{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btnLimparFiltro{
+    width: 47%;
+}
