@@ -1,0 +1,15 @@
+.card{  
+    width: 320px;
+    height: 336px;  
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-primary{
+    width: 320px;
+}
