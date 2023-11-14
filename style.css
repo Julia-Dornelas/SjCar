@@ -9,14 +9,6 @@
 .BntBronze{
     background-color:#EB7A3A;
 }
-.CardMaisVendidos{
-    display:flexbox;
-    justify-content: center; 
-}
-.CardNoticias{
-    display:flexbox;
-    justify-content: center; 
-}
 .Dirigir{
     color: white;
     font-size: larger;
@@ -29,4 +21,20 @@
 }
 .Montserrat{
     font-family: 'Montserrat', sans-serif;
+}
+.divisorTitulo{
+    size: 1px;
+    opacity: 100%;
+    background-color: #BE0C27;
+    width: 152px;
+}
+.FonteTitulo{
+    font-weight: lighter;
+    font-size: 20px;
+}
+.TamanhoVendidos{
+    width: 20%;
+}
+.TamanhoColecionador{
+    width: 18%;
 }

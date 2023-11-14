@@ -1,194 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+    <link rel="stylesheet" href="geral.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>SJ Car</title>
+  </head>
 
-  <link rel="stylesheet" href="geral.css">
-  <link rel="stylesheet" href="style.css">
-  <title>SJ Car</title>
-</head>
+  <body>
 
-<body>
+    <!--Header-->
 
-  <header>
-    <div class="pos-f-t">
-      <div class="collapse" id="navbarToggleExternalContent">
-        <div class="bg-dark p-4">
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item text-white bg-dark"> <a class="badge-dark" href="#">Home</a></li>
-            <li class="list-group-item text-white bg-dark"> <a class="badge-dark" href="#">Catálogo</a></li>
-            <li class="list-group-item text-white bg-dark"> <a class="badge-dark" href="#">Carros de colecionador</a>
-            </li>
-            <li class="list-group-item text-white bg-dark"> <a class="badge-dark" href="#">Sobre</a></li>
-            <li class="list-group-item text-white bg-dark"> <a class="badge-dark" href="#">Contatos</a></li>
-          </ul>
+    <header>
+      <div class="pos-f-t">
+        <div class="collapse" id="navbarToggleExternalContent">
+          <div class="bg-dark p-4">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item text-white bg-dark">
+                <a class="badge-dark" href="index.html">Home</a>
+              </li>
+              <li class="list-group-item text-white bg-dark">
+                <a class="badge-dark" href="catalogo.html">Catálogo</a>
+              </li>
+              <li class="list-group-item text-white bg-dark">
+                <a class="badge-dark" href="catalogocolecionador">Carros de colecionador</a>
+              </li>
+              <li class="list-group-item text-white bg-dark">
+                <a class="badge-dark" href="sobre.html">Sobre</a>
+              </li>
+              <li class="list-group-item text-white bg-dark">
+                <a class="badge-dark" href="contatos.html">Contatos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <nav class=" d-flex justify-content-center navbar navbar-dark bg-dark">
+          <button class="navbar-toggler"type="button"data-toggle="collapse"data-target="#navbarToggleExternalContent"aria-controls="navbarToggleExternalContent"aria-expanded="false" aria-label="Alterna navegação"><span class="navbar-toggler-icon"></span></button>
+
+          <!--Logo-->
+
+          <img class="Logoheader rounded mx-auto" src="img/LogoSjCar.svg" alt=""/>
+
+        </nav>
+
+      </div>
+
+    </header>
+
+    <!--Sliders-->
+
+    <div
+      id="carouselExampleFade"
+      class="carousel slide carousel-fade mp-4"
+      data-ride="carousel">
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="img/2.png" alt="Primeiro Slide" />
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="img/3.png" alt="Segundo Slide" />
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="img/4.png" alt="Terceiro Slide" />
         </div>
       </div>
-      <nav class="navbar navbar-dark bg-dark">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
-          aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Alterna navegação">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!--Logo-->
-
-        <img class="Logoheader rounded mx-auto" src="img/LogoSjCar.svg" alt="">
-      </nav>
-    </div>
-  </header>
-
-  <!--Sliders-->
-  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img class="d-block w-100" src="img/2.png" alt="Primeiro Slide">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="img/3.png" alt="Segundo Slide">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="img/4.png" alt="Terceiro Slide">
-      </div>
-    </div>
-    <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Anterior</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Próximo</span>
-    </a>
-  </div>
-
-  <!--Card Carros mais vendidos-->
-
-  <h5>Carros mais vendidos</h5>
-
-  <div class="CardMaisVendidos ">
-    <div class="card BoxShadow shadow-lg rounded Montserrat" style="width: 19rem;">
-      <img class="card-img-top" src="img/Huracan Steratto.svg" alt="Imagem Lamborghini Huracan Sterrato">
-      <div class="card-body m-0 p-0">
-        <h5 class="card-title font-weight-bold ">Lamborghini Huracan Sterrato</h5>
-        <p class="card-text">Mais de <strong><span class="font-italic text-danger ">1000</span></strong> vendas
-          efetuadas</p>
-        <a href="#"><button
-            class="btn w-100  border border-secondary border-right-0 border-bottom-0 border-left-0 rounded-bottom BntOuro Dirigir"><strong>Dirigir</strong></button></a>
-      </div>
-    </div>
-    <br>
-    <div class="card BoxShadow shadow-lg rounded Montserrat" style="width: 19rem;">
-      <img class="card-img-top" src="img/612 scaglietti.svg" alt="Imagem Ferrari 612 scaglietti">
-      <div class="card-body m-0 p-0">
-        <h5 class="card-title font-weight-bold ">Ferrari 612 scaglietti</h5>
-        <p class="card-text">Mais de <strong><span class="font-italic text-danger ">850</span></strong> vendas
-          efetuadas</p>
-        <a href="#"><button
-            class="btn w-100  border border-secondary border-right-0 border-bottom-0 border-left-0 rounded-bottom BntPrata Dirigir"><strong>Dirigir</strong></button></a>
-      </div>
-    </div>
-    <br>
-    <div class="card BoxShadow shadow-lg rounded Montserrat" style="width: 19rem;">
-      <img class="card-img-top" src="img/SL - Class.svg" alt="Imagem Mercedes SL-Class">
-      <div class="card-body m-0 p-0">
-        <h5 class="card-title font-weight-bold ">Mercedes SL-Class</h5>
-        <p class="card-text">Mais de <strong><span class="font-italic text-danger ">600</span></strong> vendas
-          efetuadas</p>
-        <a href="#"><button
-            class="btn w-100  border border-secondary border-right-0 border-bottom-0 border-left-0 rounded-bottom BntBronze Dirigir"><strong>Dirigir</strong></button></a>
-      </div>
-    </div>
-  </div> <br>
-
-  <!--Card Carros de Colecionador-->
-
-  <h5>Carros de Colecionador</h5>
-  <div class="card BoxShadow shadow-lg rounded " style="width: 19rem;">
-    <img class="card-img-top" src="img/BannerAntigo 1.svg" alt="Imagem BannerAntigo">
-    <div class="card-body m-0 p-0 Montserrat">>
-      <p class="card-text ">Veja os carros mais desejados pelos <strong><span
-            class="font-italic text-danger ">colecionadores </span></strong>atualmente</p>
-      <a href="#"><button
-          class="btn w-100  border border-secondary border-right-0 border-bottom-0 border-left-0 rounded-bottom BntConfiraAgora Dirigir"><strong>Confira
-            agora</strong></button></a>
-    </div>
-  </div>
-
-  <!--Card Noticias-->
-
-
-
-    <h6 class="TituloFonte Ubuntu">Principais Noticias </h6>
-
-
-  <div class="CardNoticias">
-    <div class="card shadow-lg rounded Montserrat" style="width: 18rem;">
-      <img class="card-img-top" src="img/EventoColecionador.svg" alt="Imagem de capa do card">
-      <div class="card-body">
-        <p class="card-text">Dos clássicos aos tunados, evento reúne amantes de carros neste domingo (12) em São João
-          da Serra Negra</p>
-      </div>
-    </div><br>
-
-    <div class="card shadow-lg rounded Montserrat" style="width: 18rem;">
-      <img class="card-img-top" src="img/EventoShow.svg" alt="Imagem de capa do card">
-      <div class="card-body">
-        <p class="card-text">Evento de carros antigos agita esse fim de semana com diversos shows e atividades</p>
-      </div>
-    </div><br>
-
-    <div class="card shadow-lg rounded Montserrat" style="width: 18rem;">
-      <img class="card-img-top" src="img/VoleiFem.jpg" alt="Imagem de capa do card">
-      <div class="card-body">
-        <p class="card-text">SJCAR patrocina o time oficial de volei feminino do IFTM campus Patrocínio</p>
-      </div>
-
-    </div><br>
-  </div>
-
-  <!--Footer-->
-
-  <footer>
-    <div class="FooterPreto Montserrat">
-      <br>
-      <img class="rounded mx-auto d-block" src="img/LogoSjCar.svg" alt="">
-
-      <p>Procêdencia, Credibilidade e Confiança</p>
-      <p>Vendemos e entregamos <br>para <strong>todo o Brasil</strong> </p>
-      <img src="img/Iconfooter.svg" alt="">
-      <br><br>
-      <p><strong class="Ubuntu">Atendimento</strong></p>
-      <p>DE SEGUNDA A SEXTA, DAS 8:30 ÀS<br> 18:00 SÁBADO DAS 8:30 ÀS 13:00</p><br>
+      <a class="carousel-control-prev" href="#carouselExampleFade"role="button"data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Anterior</span></a>
+      <a class="carousel-control-next"href="#carouselExampleFade"role="button"data-slide="next"><span class="carousel-control-next-icon " aria-hidden="true"></span><span class="sr-only">Próximo</span></a>
     </div>
 
-    <div>
-      <h5 class="Ubuntu font-weight-bold">Mapa do site</h5>
-      <ul class="list-group">
-        <li class="Montserrat "><a href="#">Home</a></li>
-        <li class="Montserrat "><a href="#">Catálogo</a></li>
-        <li class="Montserrat "><a href="#">Carros de colecionador</a></li>
-        <li class="Montserrat "><a href="#">Sobre</a></li>
-        <li class="Montserrat "><a href="#">Contatos</a></li>
-      </ul>
+    <!--Card Carros mais vendidos-->
+
+    <div class="d-flex d-row align-items-center mt-4 mb-4">
+      <hr class="divisorTitulo TamanhoVendidos">
+      <h6 class="Ubuntu h-auto FonteTitulo">Carros mais vendidos</h6>
+      <hr class="divisorTitulo TamanhoVendidos">
     </div>
-    <img class="LogoSJTech rounded mx-auto d-block" src="img/SJ TECH  (1).png" alt="">
+    
+    <div class="d-flex flex-wrap ">
 
+      <div class="card BoxShadow shadow-lg rounded Montserrat w-100 mb-4 mx-4">
+        <img class="card-img-top" src="img/Huracan Steratto.svg"alt="Imagem Lamborghini Huracan Sterrato"/>
+        <div class="card-body m-0 p-0">
+          <h5 class="card-title font-weight-bold">Lamborghini Huracan Sterrato</h5>
+          <p class="card-text">Mais de<strong><span class="font-italic text-danger"> 1000</span></strong> vendas efetuadas</p>
+          <a href="#"><button class="btn w-100 border border-secondary border-right-0 border-bottom-0 border-left-0 rounded-bottom BntOuro Dirigir"><strong>Dirigir</strong></button></a>
+        </div>
+      </div>
 
-  </footer>
+      <div class="card BoxShadow shadow-lg rounded Montserrat w-100 mb-4 mx-4">
+        <img
+          class="card-img-top"src="img/612 scaglietti.svg"alt="Imagem Ferrari 612 scaglietti"/>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"></script>
+        <div class="card-body m-0 p-0">
+          <h5 class="card-title font-weight-bold">Ferrari 612 scaglietti</h5>
+          <p class="card-text">Mais de<strong><span class="font-italic text-danger"> 850 </span></strong>vendas efetuadas</p>
+          <a href="#"><button class="btn w-100 border border-secondary border-right-0 border-bottom-0 border-left-0 rounded-bottom BntPrata Dirigir"><strong>Dirigir</strong></button></a>
+        </div>
+      </div>
 
-</body>
+      <div class="card BoxShadow shadow-lg rounded Montserrat w-100 mb-4 mx-4">
+        <img class="card-img-top"src="img/SL - Class.svg"alt="Imagem Mercedes SL-Class"/>
+        <div class="card-body m-0 p-0">
+          <h5 class="card-title font-weight-bold">Mercedes SL-Class</h5>
+          <p class="card-text">Mais de<strong><span class="font-italic text-danger"> 600 </span></strong>vendas efetuadas</p>
+          <a href="#"><button class="btn w-100 border border-secondary border-right-0 border-bottom-0 border-left-0 rounded-bottom BntBronze Dirigir"><strong>Dirigir</strong></button></a>
+        </div>
+      </div>
 
+    </div>
+
+   
+
+    <!--Card Carros de Colecionador-->
+
+    <div class="d-flex d-row align-items-center mb-4">
+      <hr class="divisorTitulo TamanhoColecionador">
+      <h6 class="Ubuntu h-auto FonteTitulo">Carros de Colecionador</h6>
+      <hr class="divisorTitulo TamanhoColecionador">
+    </div>
+
+    <div class="card BoxShadow shadow-lg rounded mb-4 mx-4">
+      <img
+        class="card-img-top"
+        src="img/BannerAntigo 1.svg"
+        alt="Imagem BannerAntigo"
+      />
+      <div class="card-body m-0 p-0 Montserrat">
+        >
+        <p class="card-text">
+          Veja os carros mais desejados pelos
+          <strong
+            ><span class="font-italic text-danger"
+              >colecionadores
+            </span></strong
+          >atualmente
+        </p>
+        <a href="#"
+          ><button
+            class="btn w-100 border border-secondary border-right-0 border-bottom-0 border-left-0 rounded-bottom BntConfiraAgora Dirigir"
+          >
+            <strong>Confira agora</strong>
+          </button></a
+        >
+      </div>
+    </div>
+
+    <!--Card Noticias-->
+
+    <div class="d-flex d-row align-items-center mb-4">
+      <hr class="divisorTitulo w-25">
+      <h6 class="Ubuntu h-auto FonteTitulo">Principais Noticias</h6>
+      <hr class="divisorTitulo w-25">
+    </div>
+
+    <div class="d-flex flex-wrap">
+      <div class="card shadow-lg rounded Montserrat w-100 mb-4 mx-4">
+        <img
+          class="card-img-top"
+          src="img/EventoColecionador.svg"
+          alt="Imagem de capa do card"
+        />
+        <div class="card-body">
+          <p class="card-text">
+            Dos clássicos aos tunados, evento reúne amantes de carros neste
+            domingo (12) em São João da Serra Negra
+          </p>
+        </div>
+      </div>
+
+      <div class="card shadow-lg rounded Montserrat w-100 mb-4 mx-4">
+        <img
+          class="card-img-top"
+          src="img/EventoShow.svg"
+          alt="Imagem de capa do card"
+        />
+        <div class="card-body">
+          <p class="card-text">
+            Evento de carros antigos agita esse fim de semana com diversos shows
+            e atividades
+          </p>
+        </div>
+      </div>
+
+      <div class="card shadow-lg rounded Montserrat w-100 mb-4 mx-4">
+        <img
+          class="card-img-top"
+          src="img/VoleiFem.jpg"
+          alt="Imagem de capa do card"
+        />
+        <div class="card-body">
+          <p class="card-text">
+            SJCAR patrocina o time oficial de volei feminino do IFTM campus
+            Patrocínio
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--Footer-->
+
+    <footer>
+
+      <div class="FooterPreto Montserrat p-4">
+        
+        <div class="mb-5">
+          <img class="rounded mx-auto d-block" src="img/LogoSjCar.svg" alt="" />
+          <p>Procêdencia, Credibilidade e Confiança</p>
+        </div>
+
+        <div class="mb-5">
+          <p>Vendemos e entregamos <br />para <strong>todo o Brasil</strong></p>
+          <img src="img/Iconfooter.svg" alt=""/>
+        </div>
+
+        <div>
+          <p class="p-0"><strong class="Ubuntu">Atendimento</strong></p>
+          <p>
+            DE SEGUNDA A SEXTA, DAS 8:30 ÀS<br />
+            18:00 SÁBADO DAS 8:30 ÀS 13:00
+          </p>
+        </div>
+
+      </div>
+
+      <div class="mt-4 mb-4">
+        <h5 class="Montserrat MapaSite font-weight-bold mb-4">Mapa do site</h5>
+        <ul class="list-group">
+          <li class="Montserrat ListaFooter mb-2"><a href="index.html">Home</a></li>
+          <li class="Montserrat ListaFooter mb-2"><a href="catalogo.html">Catálogo</a></li>
+          <li class="Montserrat ListaFooter mb-2"><a href="catalogocolecionador.html">Carros de colecionador</a></li>
+          <li class="Montserrat ListaFooter mb-2"><a href="sobre.html">Sobre</a></li>
+          <li class="Montserrat ListaFooter"><a href="contatos.html">Contatos</a></li>
+        </ul>
+      </div>
+
+      <img class="LogoSJTech rounded mx-auto d-block mb-4"src="img/SJ TECH  (1).png" alt=""/>
+
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
