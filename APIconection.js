@@ -3,7 +3,7 @@ function gerarMarcas(){
     return dados
 }
 
-function gerarObjeto(){
+async function gerarObjeto(){
     //Função requisita modelo
     const getCarsData = async (makeName) => {
         const apiURL = `https://vpic.nhtsa.dot.gov/api/vehicles/GetModelsForMakeYear/make/${makeName}/modelYear/2023/vehicletype/car?format=json`
@@ -32,45 +32,42 @@ function gerarObjeto(){
     }
 
     //recebe dados
-    for(let i=0; i<marcas.length; i++){
-        const dados = getCarsData(marcas[i])
+    await Promise.all(marcas.map(async (marca, i) => {
+        const dados = await getCarsData(marca)
 
-        dados.then((result) => {
-
-            //Constroi carro
-            for(let j=0; j<result.Count; j++){
-                //Objeto que guarda carro temporario
-                let carro = {
-                    marca: '',
-                    modelo: '',
-                    preco: '',
-                    imagem: []
-                }
-
-                carro.marca = result.Results[j].Make_Name
-                carro.modelo = result.Results[j].Model_Name
-                carro.preco = precos[i][j]
-                carro.imagem.push(`./img/${result.Results[0].Make_Name.toLowerCase()}/${result.Results[j].Model_Name}/1.svg`)
-                carro.imagem.push(`./img/${result.Results[0].Make_Name.toLowerCase()}/${result.Results[j].Model_Name}/2.svg`)
-
-                //Acrescenta no objeto
-                switch(i){
-                    case 0:
-                        carros.lamborghini.push(carro)
-                        break
-                    case 1:
-                        carros.ferrari.push(carro)
-                        break
-                    case 2:
-                        carros.bmw.push(carro)
-                        break
-                    case 3:
-                        carros.mercedes.push(carro)
-                        break
-                }
+        //Constroi carro
+        for(let j=0; j<dados.Count; j++){
+            //Objeto que guarda carro temporario
+            let carro = {
+                marca: '',
+                modelo: '',
+                preco: '',
+                imagem: []
             }
-        })
-    }
 
+            carro.marca = dados.Results[j].Make_Name
+            carro.modelo = dados.Results[j].Model_Name
+            carro.preco = precos[i][j]
+            carro.imagem.push(`./img/${dados.Results[0].Make_Name.toLowerCase()}/${dados.Results[j].Model_Name}/1.svg`)
+            carro.imagem.push(`./img/${dados.Results[0].Make_Name.toLowerCase()}/${dados.Results[j].Model_Name}/2.svg`)
+
+            //Acrescenta no objeto
+            switch(i){
+                case 0:
+                    carros.lamborghini.push(carro)
+                    break
+                case 1:
+                    carros.ferrari.push(carro)
+                    break
+                case 2:
+                    carros.bmw.push(carro)
+                    break
+                case 3:
+                    carros.mercedes.push(carro)
+                    break
+            }
+        }
+    }))
+    
     return carros
 }
