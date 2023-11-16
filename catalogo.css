@@ -6,6 +6,11 @@
     --branco: #fff;
 }
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
 /*tags*/
 
 /*id*/
@@ -35,3 +40,57 @@
 .btnLimparFiltro{
     width: 47%;
 }
+
+.tagMarca{
+    width: 120px;
+    height: 24px;
+    z-index: 1;
+    position: absolute;
+    margin-top: -36px;
+    margin-left: 16px;
+}
+
+.imgCarro{
+    margin-top: -24px;
+}
+
+.textoMarca{
+    z-index: 2;
+    font-weight: lighter;
+    font-style: italic;
+    color: #fff;
+    font-size: 13px;
+    margin-top: -34px;
+}
+
+.nomeCarro{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.infoCarro{
+    font-size: 12px;
+}
+
+.precoCarro{
+    font-size: 26px;
+    font-weight: bold;
+    font-style: italic;
+    color: var(--vermelho);
+}
+
+.btnForm{
+    background-color: var(--vermelho);
+    color: #fff;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.textoCard{
+    height: 180px;
+}
+
+.separador{
+    margin-top: 9.5px;
+}
+
