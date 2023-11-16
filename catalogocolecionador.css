@@ -1,15 +1,31 @@
+:root{
+    --corbutao: #555561;
+}
+
 .card{  
     width: 320px;
     height: 336px;  
+    margin-top: 25px;
 }
 
 .card-body{
+    
+    padding: 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.btn-primary{
-    width: 320px;
+.btn-secondary{
+
+    color:  var(--corbutao); 
+    color: white;
+    padding: 0px;
 }
+
+.botao-comprar{
+    width: 320px;
+    height: 42px;
+}
+
