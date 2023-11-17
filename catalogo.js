@@ -9,7 +9,7 @@ for(let i=0; i<marcas.length; i++){
 }
 
 //array com classes de configuração do botão
-const classes = ['btn', 'btn-outline-secondary', 'rounded-0', 'h-25', 'Ubuntu']
+const classes = ['btnFiltro', 'btn', 'btn-outline-secondary', 'rounded-0', 'h-25', 'Ubuntu']
 
 
 //div pai
@@ -27,9 +27,6 @@ for(let i=0; i<marcas.length; i++){
         button.classList.add(classes[j])
     }
 
-    //Define tamanho do botão
-    button.style.width = '47%'
-
     //inseri botão no documento
     containerFiltro[0].appendChild(button)
 }
@@ -39,12 +36,8 @@ for(let i=0; i<marcas.length; i++){
 //recebe promise
 let data = gerarObjeto()
 
-//transforma promisse em objeto
-data.then((carros) => {
-    //recebe div pai
-    const containerCards = document.querySelector('.areaCards')
-
-    //cria elementos
+//funcão para fazer Card
+function construirCarro(path, container){
     const card = document.createElement('div')
     const nomeMarca = document.createElement('p')
     const tagMarca = document.createElement('img')
@@ -59,22 +52,22 @@ data.then((carros) => {
     const btn = document.createElement('button')
 
     //capitalização
-    carros.lamborghini[0].marca = carros.lamborghini[0].marca.toLowerCase()
-    carros.lamborghini[0].marca = carros.lamborghini[0].marca.charAt(0).toUpperCase() + carros.lamborghini[0].marca.substring(1)
+    path.marca = path.marca.toLowerCase()
+    path.marca = path.marca.charAt(0).toUpperCase() + path.marca.substring(1)
 
     //adiciona conteudo do objeto
-    nomeMarca.innerHTML = carros.lamborghini[0].marca
+    nomeMarca.innerHTML = path.marca
     tagMarca.setAttribute('src', './img/tagMarca.svg')
-    imgCarro.setAttribute('src', carros.lamborghini[0].imagem[0])
-    nomeCarro.innerHTML = `${carros.lamborghini[0].marca} ${carros.lamborghini[0].modelo}`
+    imgCarro.setAttribute('src', path.imagem[0])
+    nomeCarro.innerHTML = `${path.marca} ${path.modelo}`
     infoCarro.innerHTML = '2023 - USADO - Gasolina'
-    precoCarro.innerHTML = `R$${carros.lamborghini[0].preco}`
+    precoCarro.innerHTML = `R$${path.preco}`
     separadorbtn.setAttribute('src', './img/Separador.svg')
     formBtn.setAttribute('action', 'comprarCarro.html')
     formBtn.setAttribute('method', 'get')
     btn.setAttribute('type', 'submit')
     btn.setAttribute('name', 'model')
-    btn.setAttribute('value', carros.lamborghini[0].modelo)
+    btn.setAttribute('value', path.modelo)
     btn.innerHTML = 'Comprar'
 
     //Adiciona Classes
@@ -147,7 +140,7 @@ data.then((carros) => {
     btn.classList.add('Ubuntu')
 
     //Adiciona no documento
-    containerCards.appendChild(card)
+    container.appendChild(card)
     card.appendChild(tagMarca)
     card.appendChild(nomeMarca)
     card.appendChild(imgCarro)
@@ -159,4 +152,83 @@ data.then((carros) => {
     areaBtn.appendChild(separadorbtn)
     areaBtn.appendChild(formBtn)
     formBtn.appendChild(btn)
-})
+}
+
+//define variavel para container dos cards
+let containerCards = document.querySelector('.areaCards')
+
+function gerarTodosCards(){
+    //transforma promisse em objeto
+    data.then((carros) => {
+
+        for(let i=0; i<4; i++){
+            switch(i){
+                case 0: //lamborghini
+                    for(let j=0; j<carros.lamborghini.length; j++){
+                        construirCarro(carros.lamborghini[j], containerCards)
+                    }    
+                    break
+                case 1: //ferrari
+                    for(let j=0; j<carros.ferrari.length; j++){
+                        construirCarro(carros.ferrari[j], containerCards)
+                    } 
+                    break
+                case 2: //bmw
+                    for(let j=0; j<carros.bmw.length; j++){
+                        construirCarro(carros.bmw[j], containerCards)
+                    } 
+                    break
+                case 3: //mercedes
+                    for(let j=0; j<carros.mercedes.length - 1; j++){
+                        construirCarro(carros.mercedes[j], containerCards)
+                    } 
+                    break
+            }
+        }
+    })
+}
+
+gerarTodosCards()
+
+/*Busca do Filtro*/
+
+//recebe botões
+let arrayBtnFiltro = document.getElementsByClassName('btnFiltro')
+
+//função apaga cards e refaz de acordo com a marca
+function buscaFiltro(element, path, container, control=0){
+    element.addEventListener('click', () => {
+        container.innerHTML = ''
+    
+        for(let i=0; i<path.length - control; i++){
+            construirCarro(path[i], container)
+        }
+    })
+}
+
+//adiciona eventos aos botões
+for(let i=0; i<arrayBtnFiltro.length; i++){
+    //transforma promise em objeto
+    data.then((carros) => {
+        switch(i){
+            case 0:
+                arrayBtnFiltro[i].addEventListener('click', () => {
+                    containerCards.innerHTML = ''
+                    gerarTodosCards()
+                })
+                break
+            case 1: //lamborghini
+                buscaFiltro(arrayBtnFiltro[i], carros.lamborghini,containerCards)
+                break
+            case 2: //ferrari
+                buscaFiltro(arrayBtnFiltro[i], carros.ferrari,containerCards)
+                break
+            case 3: //bmw
+                buscaFiltro(arrayBtnFiltro[i], carros.bmw,containerCards)
+                break
+            case 4: //mercedes
+                buscaFiltro(arrayBtnFiltro[i], carros.mercedes,containerCards, 1)
+                break
+        }
+    })
+}
