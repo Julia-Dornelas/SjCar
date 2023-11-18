@@ -5,16 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catálogo</title>
     <!--Css projeto-->
-    <link rel="stylesheet" href="catalogo.css">
+    <link rel="stylesheet" href="./catalogo.css">
+    <link rel="stylesheet" href="./geral.css">
     <!--Css Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
-    <main class="p-0 m-0">
+    <!--header-->
+
+    
+
+    <!--Conteudo-->
+    <main class="p-0 m-0 mt-4">
         <!--Titulo filtros-->
-        <div class="d-flex mt-2">
-            <h1 class="tituloFiltro ms-4 me-3">Filtrar por marca</h1>
-            <hr class="divisorTitulo">
+        <div class="d-flex mt-2 ms-4 me-4">
+            <h1 class="tituloFiltro">Filtrar por marca</h1>
+            <hr class="divisorTitulo w-100">
         </div>
 
         <!--Botoes filtros-->
@@ -23,28 +29,11 @@
         </div>
 
         <!--Cards-->
-        <div class="areaCards d-flex flex-wrap me-4 mt-5 ms-4 pt-3">
-            <div class="card BoxShadow shadow-lg rounded w-100 mb-2">
-                <p class="tagMarca textoMarca Montserrat text-center align-middle">Lamborghini</p>
-                <img class="tagMarca" src="./img/tagMarca.svg" alt="tag marca">
-                <img class="imgCarro card-img-top" src="img/lamborghini/Lamborghini Huracan Sterrato/1.svg" alt="Lamborghini Huracan Sterrato">
-                <div class="textoCard card-body m-0 p-0">
-                  <h3 class="card-text nomeCarro Ubuntu w-100 text-center p-1">Lamborghini Huracan Sterrato</h5>
-                  <p class="card-text infoCarro Ubuntu w-100 text-center h-auto mt-0">2023 - USADO - Gasolina</p>
-                  <h1 class="card-text precoCarro w-100 text-center mb-1 mt-0">R$3.900.000</h1>
-                  <div class="m-0 p-0 h-100">
-                    <img src="./img/Separador.svg" alt="Separador botão" class="separador w-100 p-0 h-auto">
-                    <form action="comprarCarro.html" method="get" class="formulario h-25 mt-0 p-0">
-                        <button type="submit" name="model" value="Huracan Sterrato" class="btnForm w-100 m-0 p-0 h-100 rounded-bottom border-0 Ubuntu">Comprar</button>
-                    </form>
-                  </div>
-                </div>
-            </div>
-        </div>
+        <div class="areaCards d-flex flex-wrap me-4 mt-5 ms-4 pt-3 gap-5 justify-content-center"></div>
 
         <!--Instagram-->
-        <img src="./img/FundoInstagram.svg" alt="Fundo anuncio instagram" class="mt-5">
-        <div class="infoInsta d-flex flex-wrap">
+        <img src="./img/FundoInstagram.svg" alt="Fundo anuncio instagram" class="mt-5 w-100 mb-5">
+        <div class="infoInsta d-flex flex-wrap mb-5">
             <div class="w-100 text-center d-flex flex-column justify-content-end mb-5 align-items-center">
                 <h3 class="textoInsta Ubuntu">Siga-nos no Instagram</h3>
                 <h1 class="textoInsta arrobaInsta Ubuntu">@SJCAR</h1>
@@ -55,6 +44,9 @@
             </div>
         </div>
     </main>
+
+    <!--footer-->
+
     
 
     <!--JS projeto-->

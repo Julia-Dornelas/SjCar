@@ -66,8 +66,8 @@ function construirCarro(path, container){
     formBtn.setAttribute('action', 'comprarCarro.html')
     formBtn.setAttribute('method', 'get')
     btn.setAttribute('type', 'submit')
-    btn.setAttribute('name', 'model')
-    btn.setAttribute('value', path.modelo)
+    btn.setAttribute('name', 'car')
+    btn.setAttribute('value', `${path.marca.toLowerCase()} ${path.modelo}`)
     btn.innerHTML = 'Comprar'
 
     //Adiciona Classes
@@ -75,7 +75,6 @@ function construirCarro(path, container){
     card.classList.add('BoxShadow')
     card.classList.add('shadow-lg')
     card.classList.add('rounded')
-    card.classList.add('w-100')
     card.classList.add('mt-5')
 
     nomeMarca.classList.add('tagMarca')
@@ -88,6 +87,7 @@ function construirCarro(path, container){
 
     imgCarro.classList.add('imgCarro')
     imgCarro.classList.add('card-img-top')
+    imgCarro.classList.add('w-100')
 
     areaTextos.classList.add('textoCard')
     areaTextos.classList.add('card-body')
@@ -188,6 +188,7 @@ function gerarTodosCards(){
     })
 }
 
+//Chama função para criar cards
 gerarTodosCards()
 
 /*Busca do Filtro*/

@@ -25,7 +25,7 @@ async function gerarObjeto(){
 
     //objeto que guarda dados da API
     let carros = {
-        lamborghini: [],
+        lamborghini: [{marca: 'LAMBORGHINI', modelo: 'Huracan Sterrato', preco: '3.900.000', imagem: ['./img/lamborghini/Huracan Sterrato/1.svg', './img/lamborghini/Huracan Sterrato/1.svg']}],
         ferrari: [],
         bmw: [],
         mercedes: []

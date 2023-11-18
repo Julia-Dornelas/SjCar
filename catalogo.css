@@ -19,14 +19,16 @@
 .tituloFiltro{
     font-family: 'Ubuntu', sans-serif;
     font-weight: lighter;
+    text-align: left;
     font-size: 20px;
+    width: 188px;
 }
 
 .divisorTitulo{
     size: 1px;
     opacity: 100%;
     color: var(--vermelho);
-    width: 152px;
+    width: 90%;
 }
 
 .Ubuntu{
@@ -38,7 +40,7 @@
 }
 
 .btnFiltro{
-    width: 47%;
+    width: 148px;
 }
 
 .tagMarca{
@@ -52,6 +54,8 @@
 
 .imgCarro{
     margin-top: -24px;
+    height: 155px;
+    object-fit: cover;
 }
 
 .textoMarca{
@@ -95,7 +99,7 @@
 }
 
 .infoInsta{
-    margin-top: -740px;
+    margin-top: -790px;
     height: 740px;
 }
 
@@ -117,4 +121,8 @@
 
 .arrobaInsta{
     font-size: 36px;
+}
+
+.card{
+    height: 310px;
 }
