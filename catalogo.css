@@ -98,6 +98,10 @@
     margin-top: 9.5px;
 }
 
+.card{
+    height: 310px;
+}
+
 .infoInsta{
     margin-top: -790px;
     height: 740px;
@@ -113,16 +117,33 @@
     font-size: 16px;
     color: #fff;
     text-decoration: none;
+    width: 248px;
 }
 
 .textoInsta{
     color: #fff;
 }
 
+.textosInsta{
+    width: 320px;
+}
+
 .arrobaInsta{
     font-size: 36px;
 }
 
-.card{
-    height: 310px;
+.fundoInsta{
+    height: 740px;
+    object-fit: cover;
+}
+
+@media screen and (min-width: 700px){
+    .arrobaInsta{
+        font-size: 48px;
+    }
+
+    .infoInsta{
+        margin-top: -790px;
+        height: 740px;
+    }
 }
