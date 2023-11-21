@@ -38,3 +38,11 @@
 .TamanhoColecionador{
     width: 18%;
 }
+.CardNoticias{
+    width: 320px;
+}
+@media (min-width:770px) {
+.CardNews{
+    gap: 114px;
+}
+}
