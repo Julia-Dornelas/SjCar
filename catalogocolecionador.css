@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 :root{
     --corbutao: #555561;
 }
@@ -8,8 +10,26 @@
     margin-top: 25px;
 }
 
+.tagmarca{
+    width: 120px;
+    height: 24px;
+    z-index: 1;
+    position: absolute;
+    margin-top: -13px;
+    margin-left: 16px;
+}
+
+.textomarca{
+    z-index: 2;
+    font-weight: lighter;
+    font-style: italic;
+    color: #fff;
+    font-size: 13px;
+    margin-top: -13px;
+    margin-left: 55px;
+}
+
 .card-body{
-    
     padding: 0px;
     display: flex;
     flex-direction: column;
@@ -17,15 +37,43 @@
     align-items: center;
 }
 
-.btn-secondary{
 
+
+.btn-secondary{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
     color:  var(--corbutao); 
     color: white;
     padding: 0px;
 }
 
 .botao-comprar{
-    width: 320px;
+    width: 319px;
     height: 42px;
 }
 
+.preco{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 26px;
+    color: #BE0C27;
+}
+
+.carro-nome{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+
+.carro-informacao{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 12px;
+    color: white;
+}
+
+.card-cor{
+    background-image: linear-gradient(#555561, white);
+}
