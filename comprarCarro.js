@@ -21,6 +21,22 @@ for(let i=0; i<car.length; i++){
     if(car[i] === ' '){
         //divide informações
         marca = car.slice(0, i)
-        modelo = car.slice(i+1)
+        modelo = car.slice(i+1).replace('+', ' ').replace('+', ' ').replace('%2', '')
     }
 }
+
+/*recebe dados do carro*/
+/*let data = gerarObjeto()
+
+data.then((carros) => {
+    switch(marca){
+        case 'lamborghini':
+            break
+        case 'ferrari':
+            break
+        case 'bmw':
+            break
+        case 'mercedes-benz':
+            break
+    }
+})*/
