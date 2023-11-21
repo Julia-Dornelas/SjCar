@@ -1,48 +1,92 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
-.BntOuro{
+.BntOuro {
     background-color: #FDD14A;
 }
-.BntPrata{
+
+.BntPrata {
     background-color: #D5D5D5;
 }
-.BntBronze{
-    background-color:#EB7A3A;
+
+.BntBronze {
+    background-color: #EB7A3A;
 }
-.Dirigir{
+
+.Dirigir {
     color: white;
     font-size: larger;
-}       
-.BntConfiraAgora{
-    background-color:#45372D;   
 }
-.Ubuntu{
+
+.BntConfiraAgora {
+    background-color: #45372D;
+}
+
+.Ubuntu {
     font-family: 'Ubuntu', sans-serif;
 }
-.Montserrat{
+
+.Montserrat {
     font-family: 'Montserrat', sans-serif;
 }
-.divisorTitulo{
+
+.divisorTitulo {
     size: 1px;
     opacity: 100%;
     background-color: #BE0C27;
     width: 152px;
 }
-.FonteTitulo{
+
+.FonteTitulo {
     font-weight: lighter;
     font-size: 20px;
 }
-.TamanhoVendidos{
+
+.TamanhoVendidos {
     width: 20%;
 }
-.TamanhoColecionador{
+
+.TamanhoColecionador {
     width: 18%;
 }
-.CardNoticias{
+
+.CardNoticias {
     width: 320px;
 }
+.TextoAntigo{
+    width: 320px;
+}
+.ImgAntigo{
+    width: 320px;
+}
+.CardCarros{
+    width: 300px;
+}
 @media (min-width:770px) {
-.CardNews{
-    gap: 114px;
+    .CardNews {
+        gap: 114px;
+    }
+
+    .DivBannerAntigo {
+        width: 1350px;
+        height: 700px;
+    }
+
+    .ImgAntigo {
+        width: 450px;
+        height: 700px;
+    }
+    .TextoAntigo{
+        display: flex;
+        flex-wrap:wrap;
+    }
+    .TextoColecionador{
+        font-size: 40px;
+        margin-top: 243px;
+        margin-bottom: 243px;
+    }
+    .BtnAntigo{
+        width: 600px;
+        height: 70px;
+        font-size: 40px;
 }
 }
