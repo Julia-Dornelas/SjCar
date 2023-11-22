@@ -49,18 +49,27 @@
     width: 18%;
 }
 
+.TamanhoNoticias {
+    width: 80px
+}
+
 .CardNoticias {
     width: 320px;
 }
-.TextoAntigo{
+
+.TextoAntigo {
     width: 320px;
 }
-.ImgAntigo{
+
+.ImgAntigo {
     width: 320px;
 }
-.CardCarros{
+
+.CardCarros {
     width: 300px;
+
 }
+
 @media (min-width:770px) {
     .CardNews {
         gap: 114px;
@@ -75,18 +84,95 @@
         width: 450px;
         height: 700px;
     }
-    .TextoAntigo{
+
+    .TextoAntigo {
         display: flex;
-        flex-wrap:wrap;
+        flex-wrap: wrap;
     }
-    .TextoColecionador{
+
+    .TextoColecionador {
         font-size: 40px;
         margin-top: 243px;
         margin-bottom: 243px;
     }
-    .BtnAntigo{
+
+    .BtnAntigo {
         width: 600px;
         height: 70px;
         font-size: 40px;
-}
+    }
+
+    .ImgCarro {
+        width: 690px;
+    }
+
+    .DivCarro2 {
+        height: 390px;
+    }
+
+    .DivCarro3 {
+        height: 388px;
+    }
+
+    .CarrosVendidos {
+        width: 12000px;
+        height: 430px;
+    }
+
+    .TituloCarro {
+        font-size: 48px;
+        margin-top: 30px;
+    }
+
+    .FonteCarro {
+        font-size: 20px;
+    }
+
+    .CardCarros {
+        width: 610px;
+    }
+
+    .TextoCarros {
+        margin-bottom: 154px;
+        margin-top: 30px;
+    }
+
+    .TextoCarros2 {
+        margin-bottom: 114px;
+        margin-top: 30px;
+    }
+
+    .TextoCarros3 {
+        margin-bottom: 168px;
+        margin-top: 30px;
+    }
+
+    .BntCarro {
+        width: 600px;
+        height: 70px;
+        font-size: 40px;
+    }
+
+    .ImgSlider {
+        height: 500px;
+        object-fit:cover;
+
+    }
+
+    .TamanhoVendidos {
+        width: 450px;
+    }
+
+    .TamanhoColecionador {
+        width: 440px;
+    }
+
+    .TamanhoNoticias {
+        width: 490px;
+    }
+
+    .FonteTitulo {
+        font-weight: lighter;
+        font-size: 40px;
+    }
 }
