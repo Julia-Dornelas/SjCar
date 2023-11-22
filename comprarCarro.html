@@ -4,42 +4,217 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comprar Carro</title>
+    <!--Css projeto-->
+    <link rel="stylesheet" href="./comprarCarro.css">
+    <link rel="stylesheet" href="./anuncioInsta.css">
+    <link rel="stylesheet" href="./geral.css">
+    <!--Css Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
 </head>
 <body>
-    
+    <!--header-->
+    <header>
+      <div class="pos-f-t">
+        <div class="collapse" id="navbarToggleExternalContent">
+          <div class="bg-dark p-4">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item text-white bg-dark">
+                <a class="badge-dark" href="index.html">Home</a>
+              </li>
+              <li class="list-group-item text-white bg-dark">
+                <a class="badge-dark" href="catalogo.html">Catálogo</a>
+              </li>
+              <li class="list-group-item text-white bg-dark">
+                <a class="badge-dark" href="catalogocolecionador.html"
+                  >Carros de colecionador</a
+                >
+              </li>
+              <li class="list-group-item text-white bg-dark">
+                <a class="badge-dark" href="sobre.html">Sobre</a>
+              </li>
+              <li class="list-group-item text-white bg-dark">
+                <a class="badge-dark" href="contatos.html">Contatos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <nav class="d-flex justify-content-center navbar navbar-dark bg-dark">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarToggleExternalContent"
+            aria-controls="navbarToggleExternalContent"
+            aria-expanded="false"
+            aria-label="Alterna navegação"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!--Logo-->
+
+          <img
+            class="Logoheader rounded mx-auto"
+            src="img/Logos/LogoSjCar.svg"
+            alt=""
+          />
+        </nav>
+      </div>
+    </header>
+
     <main>
         <!--Carro-->
-        <div>
-            <div id="carouselExampleIndicators" class="carousel slide">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="..." class="d-block w-100" alt="...">
+        <div class="carro d-flex flex-wrap align-items-center w-100">
+          <!--Carrossel-->
+          <div class="areaSlide">
+              <div id="carouselExampleIndicators" class="carousel slide">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                   </div>
-                  <div class="carousel-item">
-                    <img src="..." class="d-block w-100" alt="...">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="./img/lamborghini/Huracan Sterrato/1.svg" class="d-block w-100 imgSlide" alt="Huracan Sterrato">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./img/lamborghini/Huracan Sterrato/2.svg" class="d-block w-100 imgSlide" alt="Huracan Sterrato">
+                    </div>
                   </div>
-                  <div class="carousel-item">
-                    <img src="..." class="d-block w-100" alt="...">
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
               </div>
+          </div>
+
+          <!--Informações-->
+          <div class="especificacoes d-flex flex-wrap justify-content-center align-items-center">
+            <!--Nome e preço-->
+            <div class="nomeMarcaPreco d-flex flex-column p-4 align-items-center justify-content-center">
+              <h2 class="tamTexto text-center marcaCarro Ubuntu mb-0">Lamborghini</h2>
+              <h3 class="tamTexto text-center modeloCarro Montserrat mb-4">Huracan Sterrato</h3>
+              <h1 class="tamTexto text-center precoCarro Montserrat mb-0">R$1.000.000</h1>
+              <img src="./img/line.svg" alt="Linha horizontal" class="mt-0">
+            </div>
+
+            <!--informações do carro-->
+            <div class="allInfo d-flex flex-wrap justify-content-center p-4 gap-5 align-items-center">
+              <div class="info text-center">
+                <p class="titleInfo Ubuntu mb-0">Ano</p>
+                <p class="Montserrat">2023/2024</p>
+              </div>
+              <div class="info text-center">
+                <p class="titleInfo Ubuntu mb-0">Status</p>
+                <p class="Montserrat">USADO</p>
+              </div>
+              <div class="info text-center">
+                <p class="titleInfo Ubuntu mb-0">Combustível</p>
+                <p class="Montserrat">Gasolina</p>
+              </div>
+              <div class="info text-center">
+                <p class="titleInfo Ubuntu mb-0">Câmbio</p>
+                <p class="Montserrat">Automático</p>
+              </div>
+            </div>
+
+            <!--Botão-->
+            <div class="textoBtn text-center mt-3 rounded">
+              <a href="./contato.html" class="textoBtn p-1 Ubuntu">Enviar proposta</a>
+            </div>
+          </div>
+        </div>
+
+        <!--Instagram-->
+        <img src="./img/FundoInstagram.svg" alt="Fundo anuncio instagram" class="fundoInsta mt-5 w-100 mb-5 ms-0 me-0">
+        <div class="infoInsta d-flex flex-wrap mb-5 justify-content-center align-items-center">
+            <div class="textosInsta d-flex flex-column justify-content-end mb-0 align-items-center mt-3">
+                <h3 class="textoInsta Ubuntu">Siga-nos no Instagram</h3>
+                <h1 class="textoInsta arrobaInsta Ubuntu">@SJCAR</h1>
+                <a href="" class="btnInsta rounded text-center p-1 Ubuntu">Ver mais publicações</a>
+            </div>
+            <div class="imgInsta d-flex justify-content-center mt-0 mb-3">
+                <img src="./img/PerfilInstagram.svg" alt="Perfil Instagram">
+            </div>
         </div>
     </main>
 
+    <!--footer-->
+    <footer class="d-flex flex-column">
+      <div
+        class="FooterPreto Montserrat p-5 d-flex flex-wrap justify-content-center align-items-center rounded float-left">
+        <div class="TamanhoFooter">
+          <img
+            class="rounded mx-auto d-block"
+            src="img/Logos/LogoSjCar.svg"
+            alt=""
+          />
+          <p>Procêdencia, Credibilidade e Confiança</p>
+        </div>
+
+        <div class="TamanhoFooter">
+          <p>Vendemos e entregamos <br />para <strong>todo o Brasil</strong></p>
+          <img src="img/Logos/Iconfooter.svg" alt="Imagem de um carro" />
+        </div>
+
+        <div class="TamanhoFooter">
+          <p class="Atendimento">Atendimento</p>
+          <p>
+            DE SEGUNDA A SEXTA, DAS 8:30 ÀS<br />
+            18:00 SÁBADO DAS 8:30 ÀS 13:00
+          </p>
+        </div>
+      </div>
+
+      <div class="d-flex flex-row justify-content-center align-items-center FooterBranco p-4">
+        
+        <div class="TamanhoMapaSite d-flex flex-column justify-content-center align-items-center">
+          <h5 class="Montserrat MapaSite font-weight-bold mb-4">
+            Mapa do site
+          </h5>
+          <ul class="list-group align-items-center">
+            <li class="Montserrat ListaFooter mb-2">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="Montserrat ListaFooter mb-2">
+              <a href="catalogo.html">Catálogo</a>
+            </li>
+            <li class="Montserrat ListaFooter mb-2">
+              <a href="catalogocolecionador.html">Carros de colecionador</a>
+            </li>
+            <li class="Montserrat ListaFooter mb-2">
+              <a href="sobre.html">Sobre</a>
+            </li>
+            <li class="Montserrat ListaFooter">
+              <a href="contatos.html">Contatos</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="TamanhoMapaSite">
+          <img
+            class="LogoSJTech rounded mx-auto d-block mt-4"
+            src="img/Logos/SJTech.png"
+            alt="Logo Sj Tech"
+          />
+        </div>
+      </div>
+    </footer>
+
+    <!--JS projeto-->
     <script src="./APIconection.js"></script>
     <script src="./comprarCarro.js"></script>
+    <!--JS Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>
