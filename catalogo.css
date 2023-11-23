@@ -27,7 +27,7 @@
 .divisorTitulo{
     size: 1px;
     opacity: 100%;
-    color: var(--vermelho);
+    background-color: var(--vermelho);
     width: 90%;
 }
 
