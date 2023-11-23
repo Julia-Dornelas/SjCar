@@ -69,6 +69,13 @@
     width: 300px;
 
 }
+.ImgCarro{
+    height: 192px;
+    object-fit: cover;
+}
+.SliderMob{
+    width: 600px;
+}
 
 @media (min-width:770px) {
     .CardNews {
@@ -101,60 +108,8 @@
         height: 70px;
         font-size: 40px;
     }
-
-    .ImgCarro {
-        width: 690px;
-    }
-
-    .DivCarro2 {
-        height: 390px;
-    }
-
-    .DivCarro3 {
-        height: 388px;
-    }
-
-    .CarrosVendidos {
-        width: 12000px;
-        height: 430px;
-    }
-
-    .TituloCarro {
-        font-size: 48px;
-        margin-top: 30px;
-    }
-
-    .FonteCarro {
-        font-size: 20px;
-    }
-
-    .CardCarros {
-        width: 610px;
-    }
-
-    .TextoCarros {
-        margin-bottom: 154px;
-        margin-top: 30px;
-    }
-
-    .TextoCarros2 {
-        margin-bottom: 114px;
-        margin-top: 30px;
-    }
-
-    .TextoCarros3 {
-        margin-bottom: 168px;
-        margin-top: 30px;
-    }
-
-    .BntCarro {
-        width: 600px;
-        height: 70px;
-        font-size: 40px;
-    }
-
     .ImgSlider {
-        height: 500px;
+        height: 600px;
         object-fit:cover;
 
     }
@@ -174,5 +129,8 @@
     .FonteTitulo {
         font-weight: lighter;
         font-size: 40px;
+    }
+    .DivCarros{
+        gap: 100px;
     }
 }

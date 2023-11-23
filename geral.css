@@ -42,17 +42,23 @@ a {
 .ListaFooter {
   list-style: none;
 }
-
-@media(min-width:770px){
-  .FooterPreto{
+.ListaFooterBranco:hover {
+  text-decoration: none;
+  color: #000;
+}
+.TamanhoMapaSite {
+  width: 200px;
+}
+@media (min-width: 770px) {
+  .FooterPreto {
     gap: 120px;
   }
-  .FooterBranco{
+  .FooterBranco {
     gap: 700px;
+    flex-wrap: wrap;
     flex-direction: row;
-
   }
-  .TamanhoMapaSite{
+  .TamanhoMapaSite {
     width: 200px;
   }
 }
