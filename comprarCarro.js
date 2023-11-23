@@ -25,18 +25,102 @@ for(let i=0; i<car.length; i++){
     }
 }
 
-/*recebe dados do carro*/
-/*let data = gerarObjeto()
+//muda title da pagina
+document.title = modelo
 
-data.then((carros) => {
+/*recebe dados do carro*/
+let dados = gerarObjeto()
+
+//função que gera carro na pagina
+function gerarCarro(img, model, make, price){
+    //recebe elementos do documento
+    const imgSlide = document.getElementsByClassName('imgSlide')
+    const textoMarca = document.getElementsByClassName('textoMarca')
+    const textoModelo = document.getElementsByClassName('textoModelo')
+    const textoPreco = document.getElementsByClassName('textoPreco')
+    
+    //muda conteudo dos elementos
+    imgSlide[0].setAttribute('src', img[0])
+    imgSlide[1].setAttribute('src', img[1])
+    imgSlide[0].setAttribute('alt', model)
+    imgSlide[1].setAttribute('alt', model)
+
+    textoMarca[0].innerHTML = make
+    textoModelo[0].innerHTML = model
+
+    textoPreco[0].innerHTML = `R$${price}`
+}
+
+dados.then((carros) => {
+    //variaveis para guardar info do carro selecionado
+    let preco = ''
+    let imgs = ''
+
     switch(marca){
         case 'lamborghini':
+
+            //acha carro no objeto
+            for(let i=0; i<carros.lamborghini.length; i++){
+                if(carros.lamborghini[i].modelo === modelo){
+                    preco = carros.lamborghini[i].preco
+                    imgs = [carros.lamborghini[i].imagem[0], carros.lamborghini[i].imagem[1]]
+                }
+            }
+
+            //capitaliza nome da marca
+            marca = marca[0].toUpperCase() + marca.substring(1)
+
+            //monta carro na pagina
+            gerarCarro(imgs, modelo, marca, preco)
+
             break
         case 'ferrari':
+            //acha carro no objeto
+            for(let i=0; i<carros.ferrari.length; i++){
+                if(carros.ferrari[i].modelo === modelo){
+                    preco = carros.ferrari[i].preco
+                    imgs = [carros.ferrari[i].imagem[0], carros.ferrari[i].imagem[1]]
+                }
+            }
+
+            //capitaliza nome da marca
+            marca = marca[0].toUpperCase() + marca.substring(1)
+
+            //monta carro na pagina
+            gerarCarro(imgs, modelo, marca, preco)
+
             break
         case 'bmw':
+            //acha carro no objeto
+            for(let i=0; i<carros.bmw.length; i++){
+                if(carros.bmw[i].modelo === modelo){
+                    preco = carros.bmw[i].preco
+                    imgs = [carros.bmw[i].imagem[0], carros.bmw[i].imagem[1]]
+                }
+            }
+
+            //capitaliza nome da marca
+            marca = marca[0].toUpperCase() + marca.substring(1)
+
+            //monta carro na pagina
+            gerarCarro(imgs, modelo, marca, preco)
+
             break
         case 'mercedes-benz':
+            //acha carro no objeto
+            for(let i=0; i<carros.mercedes.length; i++){
+                if(carros.mercedes[i].modelo === modelo){
+                    preco = carros.mercedes[i].preco
+                    imgs = [carros.mercedes[i].imagem[0], carros.mercedes[i].imagem[1]]
+                }
+            }
+
+            //capitaliza nome da marca
+            marca = marca[0].toUpperCase() + marca.substring(1)
+
+            //monta carro na pagina
+            gerarCarro(imgs, modelo, marca, preco)
+
             break
     }
-})*/
+})
