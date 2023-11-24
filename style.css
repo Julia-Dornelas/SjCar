@@ -55,6 +55,7 @@
 
 .CardNoticias {
     width: 320px;
+    height: 320px;
 }
 
 .TextoAntigo {
@@ -69,11 +70,13 @@
     width: 300px;
 
 }
-.ImgCarro{
+
+.ImgCarro {
     height: 192px;
     object-fit: cover;
 }
-.SliderMob{
+
+.SliderMob {
     width: 600px;
 }
 
@@ -90,6 +93,14 @@
     .ImgAntigo {
         width: 450px;
         height: 700px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+
+    .BntConfiraAgora {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 0px;
     }
 
     .TextoAntigo {
@@ -108,29 +119,31 @@
         height: 70px;
         font-size: 40px;
     }
+
     .ImgSlider {
         height: 600px;
-        object-fit:cover;
+        object-fit: cover;
 
     }
 
     .TamanhoVendidos {
-        width: 450px;
+        width: 38%;
     }
 
     .TamanhoColecionador {
-        width: 440px;
+        width: 37%;
     }
 
     .TamanhoNoticias {
-        width: 490px;
+        width: 40%;
     }
 
     .FonteTitulo {
         font-weight: lighter;
         font-size: 40px;
     }
-    .DivCarros{
+
+    .DivCarros {
         gap: 100px;
     }
 }
