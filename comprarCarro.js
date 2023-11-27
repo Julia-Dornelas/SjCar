@@ -158,4 +158,6 @@ else{ //é de colecionador
     //muda conteudo
     ano.innerHTML = propriedade[1]
     cambio.innerHTML = 'Manual'
+
+    document.title = `${propriedade[0][1]} ${propriedade[0][0]}`
 }
