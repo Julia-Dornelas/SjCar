@@ -16,6 +16,8 @@
 
 
 .carcol{
+    width: 318px;
+    height: 166px; 
     margin-top: -23px;
 }
 
@@ -74,7 +76,7 @@
     color: #fff;
     font-size: 13px;
     margin-top: -13px;
-    margin-left: 55px;
+    margin-left: 60px;
 }
 
 .card-body{
@@ -86,17 +88,15 @@
     justify-content: center;
     align-items: center;
 }
+
+
   
-@media only screen and (min-width: 770px) {
+@media only screen and (min-width: 440px) {
 
     .card{
-        width: 320px;
-        height: 336px;  
         margin-top: 25px;
-        margin-right: 45.5px;
-        margin-left: 45.4px;
+        margin-right: 3.159722222222%;
+        margin-left: 3.159722222222%;
     }
-
    
-
-  }
+}
