@@ -102,6 +102,10 @@ span{
             display: inline-block;
             text-align: center;
         }
+        #div-title{
+            margin-top: 50px;
+            margin-bottom: 25px;
+        }
         #title{
             width: auto;
             height: 50px;
