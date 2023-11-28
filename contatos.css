@@ -11,6 +11,9 @@ h1{
 p{
     font-family: Ubuntu;
 }
+span{
+    color: #BE0C27;
+}
 /*Mobile*/
 @media only screen and (max-width: 600px) {
     body {
