@@ -145,7 +145,6 @@ else{ //é de colecionador
 
     //recebe caminho da imagem
     img = [`./img/colecionador/${propriedade[0]}.svg`, `./img/colecionador/${propriedade[0]}.svg`]
-    console.log(img)
 
     //separa nome do carro
     propriedade[0] = propriedade[0].split('-')
