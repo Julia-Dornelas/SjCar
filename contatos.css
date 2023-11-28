@@ -14,6 +14,10 @@ p{
 span{
     color: #BE0C27;
 }
+#div-main{
+    display: flex;
+    justify-content: center;
+}
 /*Mobile*/
 @media only screen and (max-width: 600px) {
     body {
@@ -130,6 +134,7 @@ span{
     /*classes-ptr*/
     .p-escrita{
         text-align: left;
+        margin-left: 10px;
     }
 }
 /*Desktop*/
@@ -142,7 +147,7 @@ span{
         text-align: center;
     }
     #titlepr{
-        width: 692px;
+        width: 100%;
         height: 80px;
         text-align: center;
         flex-shrink: 0;
@@ -166,12 +171,21 @@ span{
     #formulario{
         display: inline-block;
         text-align: center;
+        width: auto;
+        margin: auto;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+    #div-title{
+        width: 52%;
+        margin: auto;
+        text-align: center;
     }
     /*Classes-formulario*/
     .caixa{
         margin: 5px;
-        width: 52%;
-        height: 70px;
+        width: 70%;
+        height: 80px;
         border-radius: 10px;
         border: inherit;
         background: #FFF;
