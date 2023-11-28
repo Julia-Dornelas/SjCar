@@ -19,19 +19,11 @@ span{
     justify-content: center;
 }
 /*Mobile*/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1200px) {
     body {
       background-color: lightblue;
     }
     /*Ids-formulario*/
-    #titlepr{
-        color: #000;
-        text-align: center;
-        font-family: Ubuntu;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-    }
     #btid{
         border-radius: 10px;
         width: 150px;
@@ -45,7 +37,6 @@ span{
         box-shadow: 10px 10px 40px 0px rgba(0, 0, 0, 0.25), -10px -10px 40px 0px rgba(0, 0, 0, 0.25);
     }
     #suamensagemid{
-        width: 286px;
         height: 91px;
         flex-shrink: 0;
     }
@@ -54,14 +45,23 @@ span{
         text-align: center;
     }
     /*Classes-formulario*/
+    .titlepr{
+        color: #000;
+        text-align: center;
+        font-family: Ubuntu;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        font-size: 26px;
+    }
     .caixa{
         border-radius: 10px;
         border: inherit;
         background: #FFF;
         box-shadow: -10px -10px 40px 0px rgba(0, 0, 0, 0.25), 10px 10px 40px 0px rgba(0, 0, 0, 0.25);
-        width: 286px;
+        width: 75%;
         height: 49px;
-        margin: 5px;
+        margin: 3px;
         padding: 5px;
     }
     .div-form{
@@ -106,6 +106,7 @@ span{
         color: #FFF;
         flex-shrink: 0;
         box-shadow: 10px 10px 40px 0px rgba(0, 0, 0, 0.25), -10px -10px 40px 0px rgba(0, 0, 0, 0.25);
+        font-size: 14px;
 }
 #escrita-contatos{
     background-color: #FFF;
@@ -135,10 +136,11 @@ span{
     .p-escrita{
         text-align: left;
         margin-left: 10px;
+        font-size: 14px;
     }
 }
 /*Desktop*/
-@media only screen and (min-width: 770px) {
+@media only screen and (min-width: 1300px) {
     body {
       background-color: lightblue;
     }
@@ -185,7 +187,7 @@ span{
     .caixa{
         margin: 5px;
         width: 70%;
-        height: 80px;
+        height: 70px;
         border-radius: 10px;
         border: inherit;
         background: #FFF;
