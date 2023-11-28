@@ -137,6 +137,17 @@
     object-fit: cover;
 }
 
+.resBusca{
+    font-weight: lighter;
+    color: var(--cinza);
+}
+
+.imgBusca{
+    width: 22px;
+    height: 20px;
+    display: none;
+}
+
 @media screen and (min-width: 700px){
     .arrobaInsta{
         font-size: 48px;
