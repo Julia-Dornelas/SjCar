@@ -211,23 +211,49 @@ function buscaFiltro(element, path, container, control=0){
 for(let i=0; i<arrayBtnFiltro.length; i++){
     //transforma promise em objeto
     data.then((carros) => {
+        //recebe elementos da busca
+        const pBusca = document.getElementsByClassName('resBusca')
+        const imgBusca = document.getElementsByClassName('imgBusca')
+
         switch(i){
             case 0:
                 arrayBtnFiltro[i].addEventListener('click', () => {
                     containerCards.innerHTML = ''
+                    pBusca[0].innerHTML = `Foram encontrados ${carros.lamborghini.length + carros.ferrari.length + carros.bmw.length + carros.mercedes.length} carros`
+                    imgBusca[0].style.display = 'none'
                     gerarTodosCards()
                 })
                 break
             case 1: //lamborghini
+                arrayBtnFiltro[i].addEventListener('click', () => {
+                    pBusca[0].innerHTML = `Foram encontrados ${carros.lamborghini.length} carros`
+                    imgBusca[0].setAttribute('src', './img/lamborghini/logo.png')
+                    imgBusca[0].style.display = 'block'
+                })
                 buscaFiltro(arrayBtnFiltro[i], carros.lamborghini,containerCards)
                 break
             case 2: //ferrari
+                arrayBtnFiltro[i].addEventListener('click', () => {
+                    pBusca[0].innerHTML = `Foram encontrados ${carros.ferrari.length} carros`
+                    imgBusca[0].setAttribute('src', './img/ferrari/logo.png')
+                    imgBusca[0].style.display = 'block'
+                })
                 buscaFiltro(arrayBtnFiltro[i], carros.ferrari,containerCards)
                 break
             case 3: //bmw
+                arrayBtnFiltro[i].addEventListener('click', () => {
+                    pBusca[0].innerHTML = `Foram encontrados ${carros.bmw.length} carros`
+                    imgBusca[0].setAttribute('src', './img/bmw/logo.png')
+                    imgBusca[0].style.display = 'block'
+                })
                 buscaFiltro(arrayBtnFiltro[i], carros.bmw,containerCards)
                 break
             case 4: //mercedes
+                arrayBtnFiltro[i].addEventListener('click', () => {
+                    pBusca[0].innerHTML = `Foram encontrados ${carros.mercedes.length} carros`
+                    imgBusca[0].setAttribute('src', './img/mercedes/logo.png')
+                    imgBusca[0].style.display = 'block'
+                })
                 buscaFiltro(arrayBtnFiltro[i], carros.mercedes,containerCards, 1)
                 break
         }
