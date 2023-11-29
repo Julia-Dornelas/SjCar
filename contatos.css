@@ -19,7 +19,7 @@ span{
     justify-content: center;
 }
 /*Mobile*/
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 999px) {
     body {
       background-color: lightblue;
     }
@@ -140,7 +140,7 @@ span{
     }
 }
 /*Desktop*/
-@media only screen and (min-width: 1300px) {
+@media only screen and (min-width: 1000px) {
     body {
       background-color: lightblue;
     }
