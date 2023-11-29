@@ -107,3 +107,8 @@
         width: 624px;
     }
 }
+
+.textoFooter{
+    text-decoration: none;
+    color: #000;
+}

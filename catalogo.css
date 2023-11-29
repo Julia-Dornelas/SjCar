@@ -158,3 +158,8 @@
         height: 740px;
     }
 }
+
+.textoFooter{
+    text-decoration: none;
+    color: #000;
+}
