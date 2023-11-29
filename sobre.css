@@ -105,7 +105,7 @@ span{
     }
 }
 /*Desktop*/
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1380px) {
         /*Ids*/
         #main{
             display: inline-block;
@@ -195,4 +195,97 @@ span{
             border-radius: 10px;;
             display: inline-block;
         }
+}
+/*Desktop*/
+@media only screen and (min-width: 1000px) and (max-width: 1379px) {
+    /*Ids*/
+    #main{
+        display: inline-block;
+        text-align: center;
+    }
+    #div-title{
+        margin-top: 50px;
+        margin-bottom: 25px;
+    }
+    #title{
+        width: auto;
+        height: 50px;
+        color: #000;
+        font-family: Ubuntu;
+        font-size: 34px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin: auto;
+    }
+    #introducao{
+        display: inline-block;
+        width: 970px;
+        height: auto;
+        flex-shrink: 0;
+        border-radius: 10px 10px 0px 0px;
+        background: #555561;
+    }
+    #cont-intro{
+        color: #FFF;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        width: auto;
+        height: auto;
+        flex-shrink: 0;
+        margin: auto;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    /*Classes*/
+    .h2-txt{
+        color: #000;
+        font-family: Ubuntu;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        width: 368px;
+        height: 26px;
+        flex-direction: column;
+        justify-content: center;
+        flex-shrink: 0;
+        margin-bottom: 20px;
+    }
+    .txt{
+        width: 990px;
+        height: auto;
+        flex-shrink: 0;
+        color: #000;
+        text-align: justify;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+    .caixa-txt{
+        display: inline-block;
+        text-align: justify;
+        margin: auto;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .div-center{
+        margin-top: 50px;
+        display: inline-block;
+        text-align: center;
+    }
+    .imgs{
+        margin-top: -47px;
+        width: 970px;
+        height: 485px;
+        flex-shrink: 0;
+        border-radius: 10px;;
+        display: inline-block;
+    }
 }
